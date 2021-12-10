@@ -1,5 +1,5 @@
 import './Home.css';
-
+import {Link} from 'react-router-dom'
 function Home(){
     return(
         <div>
@@ -12,7 +12,9 @@ function Home(){
 
                 <input type='text' id= 'name'placeholder='John Doe' autoFocus required/><br/>
                 <div>
-                    <button type='button'className="startbtn">START</button>
+                    <Link to="/Add">
+                        <button type='button'className="startbtn">START</button>
+                    </Link>
                 </div>
         </div>
     );
