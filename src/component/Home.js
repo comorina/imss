@@ -12,7 +12,7 @@ function Home(){
 
                 <input type='text' id= 'name'placeholder='John Doe' autoFocus required/><br/>
                 <div>
-                    <Link to="/About">
+                    <Link to={'/about'}>
                         <button type='button'className="startbtn">START</button>
                     </Link>
                 </div>
