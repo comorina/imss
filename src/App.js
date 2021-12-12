@@ -1,9 +1,9 @@
-//import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 import Home from './component/Home';
 import Add from './component/Add';
 import List from './component/List';
-import React from "react";
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -12,8 +12,14 @@ import {
 } from "react-router-dom";
 
 export default function App() {
+  const [inputText, setInputText] = useState("");
+  const [todos, setTodos] = useState([]);
   return (
     <Router>
+      <header>
+
+        <h1 className='t'>Todo App</h1>
+      </header>
       <div>
         <nav>
           <ul>
@@ -33,10 +39,10 @@ export default function App() {
             renders the first one that matches the current URL. */}
         <Switch>
           <Route path="/about">
-            <Add />
+            <Add inputText={inputText} todos={todos} setTodos={setTodos} setInputText={setInputText} />
           </Route>
           <Route path="/users">
-            <List/>
+            <List setTodos={setTodos} todos={todos} setInputText={setInputText} inputText={inputText} />
           </Route>
           <Route path="/">
             <Home />
@@ -46,4 +52,3 @@ export default function App() {
     </Router>
   );
 }
-

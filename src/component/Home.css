@@ -1,8 +1,8 @@
 header{
-    margin-top: 20px;
+      margin-top: 0px;
       background-size: auto;
       background-color: rgb(245, 12, 214);
-      height: 90px;
+      height: 150px;
       
     }
   .t{
@@ -16,23 +16,14 @@ header{
       margin-top: 10%;
       left: 42%;
       font-weight: bolder;
-      
   }
-  input{
-      margin-top: px;
-      margin-left: 800px;
-      background: #fff;
-      color: #525865;
-      border-radius: 4px;
-      border: 1px solid #d1d1d1;
-      box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
-      font-family: inherit;
-      font-size: 1em;
-      line-height: 1.45;
-      outline: none;
-      padding: 0.6em 1em 0.3em;
-      width: 12%;
-      
+  .inpt{
+        padding: 20px;
+        margin-left:  42%;
+        box-shadow: inset 1px 2px 8px rgba(0, 0, 0, 0.07);
+        background: #fff;
+        color: #525865;
+        
   }
   .startbtn{
       margin-top: 50px;

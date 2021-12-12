@@ -1,33 +1,24 @@
-import './List.css';
-import bin from'./bin.png';
-import edit from'./edit.png';
-function List() {
-    return(
-        <div>
-            <header>
-                <div className='fit'></div>
-                <h1>Todo App</h1>
-            </header>
+import React from 'react';
+import Todo from './Todo';
 
-            <p className='para1'>All Todo List.</p>
-            <hr/>
 
-            <div>
-                <input type='text' id ='editcontent'/>
-                <button type='button' className="editbtn">Edit</button>
-            </div><br/><br/>
-
-            <table>
-                <tr>
-                    <td><h3 className="Listname">Apple</h3></td>
-                    <td>
-                            <button className="btn"> <img src={bin} className="btnsize"/> </button>
-                            < button className="btn1"> <img src={edit} className="btnsize"/> </button>
-                    </td>
-                </tr>
-            </table>
+const TodoList = ({ todos, setTodos, setInputText, inputText }) => {
+    return (
+        <div className="todo-container">
+            <ul className="todo-list">
+                {todos.map((todo) => (
+                    <Todo
+                        todo={todo}
+                        todos={todos}
+                        setTodos={setTodos}
+                        key={todo.id}
+                        text={todo.text}
+                        setInputText={setInputText}
+                        inputText={inputText}
+                    />
+                ))}
+            </ul>
         </div>
     );
-}
-
-export default List;
+};
+export default TodoList;
