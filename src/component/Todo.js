@@ -50,3 +50,4 @@ const Todo = ({ text, todo, todos, setTodos, inputText }) => {
 }
 
 export default Todo;
+//...
