@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/imss/static/css/main.761fcb8c.chunk.css",
-    "main.js": "/imss/static/js/main.63dae9a0.chunk.js",
-    "main.js.map": "/imss/static/js/main.63dae9a0.chunk.js.map",
+    "main.css": "/imss/static/css/main.7ce6ca10.chunk.css",
+    "main.js": "/imss/static/js/main.e43229d0.chunk.js",
+    "main.js.map": "/imss/static/js/main.e43229d0.chunk.js.map",
     "runtime-main.js": "/imss/static/js/runtime-main.a6dd03de.js",
     "runtime-main.js.map": "/imss/static/js/runtime-main.a6dd03de.js.map",
     "static/js/2.01f3b0d6.chunk.js": "/imss/static/js/2.01f3b0d6.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.792eb3a5.chunk.js": "/imss/static/js/3.792eb3a5.chunk.js",
     "static/js/3.792eb3a5.chunk.js.map": "/imss/static/js/3.792eb3a5.chunk.js.map",
     "index.html": "/imss/index.html",
-    "static/css/main.761fcb8c.chunk.css.map": "/imss/static/css/main.761fcb8c.chunk.css.map",
+    "static/css/main.7ce6ca10.chunk.css.map": "/imss/static/css/main.7ce6ca10.chunk.css.map",
     "static/js/2.01f3b0d6.chunk.js.LICENSE.txt": "/imss/static/js/2.01f3b0d6.chunk.js.LICENSE.txt",
     "static/media/bin.a6fd2950.png": "/imss/static/media/bin.a6fd2950.png"
   },
   "entrypoints": [
     "static/js/runtime-main.a6dd03de.js",
     "static/js/2.01f3b0d6.chunk.js",
-    "static/css/main.761fcb8c.chunk.css",
-    "static/js/main.63dae9a0.chunk.js"
+    "static/css/main.7ce6ca10.chunk.css",
+    "static/js/main.e43229d0.chunk.js"
   ]
 }
