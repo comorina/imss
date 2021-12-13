@@ -39,7 +39,7 @@ const Todo = ({ text, todo, todos, setTodos, inputText }) => {
             <button onClick={completeHandler} className='complete-btn'><img src={Check} className='img' /></button>
             <button onClick={() => {
                 const confirmBox = window.confirm(
-                    "Do you really want to delete this Crumb?"          // pop alert tab.
+                    "Do you really want to delete this Todo?"          // pop alert tab.
                 )
                 if (confirmBox === true) {
                     deleteHandler();
