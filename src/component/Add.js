@@ -12,13 +12,21 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
     };
 
     const submitTidiHandler = (e) => {
-        e.preventDefault();
-        setTodos([
-            ...todos,
-            { text: inputText, completed: false, id: Math.random() * 1000 }
-        ]);
-        //alert("Todo Added Successfully!");
-        setInputText("");
+        if(inputText === ""){
+            alert("Please write something!");
+            e.preventDefault();
+        }
+        else{
+            e.preventDefault();
+            setTodos([
+                ...todos,
+                { text: inputText, completed: false, id: Math.random() * 1000 }
+            ]);
+            //alert("Todo Added Successfully!");
+            
+            setInputText("");
+        }
+        
     };
     return (
         <div>
