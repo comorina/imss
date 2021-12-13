@@ -79,15 +79,14 @@ form button{
 
 .trash-btn,
 .complete-btn {
-  background: #ff6f47;
-  color: white;
-  border: none;
-  padding: 1rem;
-  cursor: pointer;
-  font-size: 1rem;
+  background-color: rgb(243, 117, 68);
+  width:50px;
+  height: 50px;
 }
 .complete-btn {
   background: rgb(145, 109, 167);
+  width:50px;
+  height: 50px;
 }
 .todo-item {
   padding: 0rem 0.5rem;
@@ -98,4 +97,7 @@ form button{
 .completed {
   text-decoration: line-through;
   opacity: 0.5;
+}
+.img{
+  width: 20px;
 }

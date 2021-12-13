@@ -14,6 +14,7 @@ import {
 export default function App() {
   const [inputText, setInputText] = useState("");
   const [todos, setTodos] = useState([]);
+  const [oldTodo, newTodo] = useState(null);
   return (
     <Router>
       <header>
