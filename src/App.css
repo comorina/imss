@@ -92,7 +92,7 @@ form button{
   padding: 0rem 0.5rem;
 }
 .todo-item {
-  padding: 0rem 0.5rem;
+  padding: 1rem 0.5rem;
 }
 .completed {
   text-decoration: line-through;
@@ -100,4 +100,7 @@ form button{
 }
 .img{
   width: 20px;
+}
+.listHead{
+  text-align: center;
 }

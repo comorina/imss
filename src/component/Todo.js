@@ -1,15 +1,15 @@
 import React from 'react';
-import Check from'./check.png';
+import Check from './check.png';
 import Bin from './bin.png';
 
 
 const Todo = ({ text, todo, todos, setTodos, inputText }) => {
-    // Event
+    //Delete Button event.
     const deleteHandler = () => {
         setTodos(todos.filter((el) => el.id !== todo.id));
-        alert("Todo delete!")
     };
 
+    // Ckeck Button Event.
     const completeHandler = () => {
         setTodos(todos.map(item => {
             if (item.id === todo.id) {
@@ -33,10 +33,18 @@ const Todo = ({ text, todo, todos, setTodos, inputText }) => {
         });
     };*/
     return (
+        // Todo Show here.
         <div className='todo'>
             <li className={`todo-item ${todo.completed ? "completed" : ""}`}>{text}</li>
-            <button onClick={completeHandler} className='complete-btn'><img src={Check} className='img'/></button>
-            <button onClick={deleteHandler} className='trash-btn'><img src={Bin}className='img'/></button>
+            <button onClick={completeHandler} className='complete-btn'><img src={Check} className='img' /></button>
+            <button onClick={() => {
+                const confirmBox = window.confirm(
+                    "Do you really want to delete this Crumb?"          // pop alert tab.
+                )
+                if (confirmBox === true) {
+                    deleteHandler();
+                }
+            }} className='trash-btn'><img src={Bin} className='img' /></button>
         </div>
     );
 }

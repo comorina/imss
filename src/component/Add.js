@@ -1,7 +1,6 @@
+// Import file here.
 import React from 'react';
 import Todo from './Todo';
-
-
 
 
 const Form = ({ setInputText, todos, setTodos, inputText }) => {
@@ -30,6 +29,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
     };
     return (
         <div>
+            {/* Here HTML Code. */}
             <form>
                 <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
                 <button onClick={submitTidiHandler} className="todo-button" type="submit">
@@ -37,6 +37,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
                 </button>
                 
             </form>
+            {/* Show Todo */}
             <div classNmae="todo-container-add">
                 <ul className="todo-list-add">
                     {todos.map((todo) => (
