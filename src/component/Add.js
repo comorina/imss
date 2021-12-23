@@ -29,7 +29,7 @@ const Form = ({ setInputText, todos, setTodos, inputText }) => {
     };
     return (
         <div>
-            {/* Here HTML Code. */}
+            {/* Here HTML Code... */}
             <form>
                 <input value={inputText} onChange={inputTextHandler} type="text" className="todo-input" />
                 <button onClick={submitTidiHandler} className="todo-button" type="submit">
